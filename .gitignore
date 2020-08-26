@@ -14,3 +14,6 @@ go-kata
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#tooling
+.idea/
