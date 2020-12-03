@@ -38,7 +38,7 @@ func ifStatements(val int) string {
 
 // https://golang.org/ref/spec#Switch_statements
 func switchStatements(val int) string {
-	// Compaire the value passed using a expression switch statement without a condition and return the following messages
+	// Compare the value passed using a expression switch statement without a condition and return the following messages
 	// if val is less than 5 then return "The value is SMALL"
 	// if the value is between 6 and 10 the return "The value is MEDIUM"
 	// if the value is greater than 10 then return "The value is LARGE"

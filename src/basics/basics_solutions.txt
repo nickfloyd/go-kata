@@ -1,0 +1,61 @@
+package basicskata
+
+import (
+	"fmt"
+)
+
+func main() {
+	assignments(10, 2)
+}
+
+// https://golang.org/ref/spec#Variables
+func assignments(x int, y int) int {
+	// 1. Get the mean of two numbers
+	// 2. Use the Printf function to format a string with the mean
+	// 3. Use the formatter %T to also print the type of the mean
+
+	mean := (x + y) / 2
+
+	// Calculate mean
+
+	fmt.Printf("Mean: %v.  Type: %T\n", mean, mean)
+	return mean
+}
+
+// https://golang.org/ref/spec#If_statements
+func ifStatements(val int) string {
+	// Compare the value passed using if/else and return the following messages
+	// if val is less than 5 then return "The value is SMALL"
+	// if the value is between 6 and 10 the return "The value is MEDIUM"
+	// if the value is greater than 10 then return "The value is LARGE"
+
+	size := "SMALL"
+
+	if val >= 6 && val <= 10 {
+		size = "MEDIUM"
+	} else if val > 10 {
+		size = "LARGE"
+	}
+
+	return fmt.Sprintf("The value is %s", size)
+}
+
+// https://golang.org/ref/spec#Switch_statements
+func switchStatements(val int) string {
+	// Compare the value passed using a expression switch statement without a condition and return the following messages
+	// if val is less than 5 then return "The value is SMALL"
+	// if the value is between 6 and 10 the return "The value is MEDIUM"
+	// if the value is greater than 10 then return "The value is LARGE"
+
+	size := ""
+	switch {
+	case val >= 6 && val <= 10:
+		size = "MEDIUM"
+	case val > 10:
+		size = "LARGE"
+	default:
+		size = "SMALL"
+	}
+
+	return fmt.Sprintf("The value is %s", size)
+}
