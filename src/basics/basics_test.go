@@ -1,4 +1,4 @@
-package basics
+package basicskata
 
 import (
 	"testing"
@@ -17,7 +17,7 @@ type conditionalTestData struct {
 	expected string
 }
 
-var conditionalTests = []conditionalTestData {
+var conditionalTests = []conditionalTestData{
 	{1, "The value is SMALL"},
 	{7, "The value is MEDIUM"},
 	{100, "The value is LARGE"},
