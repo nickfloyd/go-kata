@@ -40,3 +40,14 @@ func TestSwitchStatements(t *testing.T) {
 		}
 	}
 }
+
+func TestForStatements(t *testing.T) {
+	actualEven, actualOdd := forStatements()
+	if actualEven != 10 {
+		t.Errorf("For Statement(): expected: %d, actualEven: %d", 10, actualEven)
+	}
+	if actualOdd != 10 {
+		t.Errorf("For Statement(): expected: %d, actualOdd: %d", 11, actualOdd)
+	}
+
+}

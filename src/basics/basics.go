@@ -49,3 +49,17 @@ func switchStatements(val int) string {
 
 	return message
 }
+
+// https://golang.org/ref/spec#For_statements
+func forStatements() (even int, odd int) {
+	// Using a for loop, for numbers 1 - 21
+	// If the number is even, increment the even count by 1
+	// If the number is odd, increment the odd count by 1
+	// Return both counts
+
+	e, o := 0, 0
+
+	// Solve
+
+	return e, o
+}
